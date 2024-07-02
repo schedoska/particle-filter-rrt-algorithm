@@ -2,6 +2,7 @@
 
 #include "Robot.h"
 #include "ParticleFilter.h"
+#include <cmath>
 
 enum class RobotState {Explore, Path, Idle};
 
