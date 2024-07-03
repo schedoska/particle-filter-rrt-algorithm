@@ -32,9 +32,12 @@ make
 Simulation workflow can split into 4 stages:
 
 1. **SETUP** - Set robot starting position and goal/home position inside the building. To proceed to next stage user needs to press _START_ button.
-2. **LOCALIZATION** - Robot drives around building in random direction and tries to estimate it's current position using particle filtering (Monte Carlo algorithm). To procceed, estimation confidence level must hit required treshold of 95%. Time to do so may vary and is depndent on building structure, starting position and amount od Lidar beams availible.
-3. **PATH FINDING** - RRT* (Rapidly exploring random tree) algorithm is used to find shortest path from current robot position to goal/home node position
-
+2. **LOCALIZATION** - Robot drives around building in random direction and tries to estimate it's current position using particle filtering (Monte Carlo algorithm). To procceed, estimation confidence level must hit required treshold of 70%. Time to do so may vary and is depndent on building structure, starting position and amount od Lidar beams availible.
+3. **PATH FINDING** - RRT* (Rapidly exploring random tree) algorithm is used to find shortest path from current robot position to goal/home node position. To proceed to the next step, 2 conditoins needs to be met:
+  - Any path from current position to goal/home have been found
+  - Algorthm placed at least 600 RRT* nodes
+4. **RETURNING** - Robot follows found path and drives to goal/home, while continuing to estimate it's position.
+5. **FINISHED** - Robot have arrived at destination point. Pressing _RESTART_ button will change state back to **SETUP** to start again.
 
 
 
