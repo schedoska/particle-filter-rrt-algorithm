@@ -39,6 +39,7 @@ Simulation workflow can split into 4 stages:
 4. **RETURNING** - Robot follows found path and drives to goal/home, while continuing to estimate it's position.
 5. **FINISHED** - Robot have arrived at destination point. Pressing _RESTART_ button will change state back to **SETUP** to start again.
 
+![particle2](./docs/particle2.png)
 
 
 
