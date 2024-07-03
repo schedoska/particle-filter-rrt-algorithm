@@ -19,10 +19,10 @@ Project implements particle filtering method (Monte Carlo) to estimate robot pos
 
   Example:
 
-  `
+  ```
   mkdir build
   cd build
   cmake .. -G "Unix Makefiles"
   make
   .\RobotNavigation.exe
-  `
+  ```
