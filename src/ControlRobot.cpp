@@ -126,8 +126,8 @@ void ControlRobot::draw(sf::RenderWindow& window)
 		m_particleFilter->draw(window);
 
 	if (m_path.size() > 2) {
-		for (int i = 0; i < m_path.size() - 1; i++) {
-			if (i < m_pathStep + 1) {
+		for (size_t i = 0; i < m_path.size() - 1; i++) {
+			if (i < (size_t)m_pathStep + 1) {
 				m_pathLineShape.setFillColor(sf::Color::Blue);
 			}
 			else {

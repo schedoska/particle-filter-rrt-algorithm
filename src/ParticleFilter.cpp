@@ -78,7 +78,6 @@ void ParticleFilter::resample()
 	}*/
 
 	int h = m_sampleList.size() / 4;
-	int spreadArea = 50;
 	float spreadAngle = 0.7;
 	for (int i = 0; i < h; i++) {
 		if (Line::len(m_sampleList[i].getPos(), m_estimatedPos) < trustDistance)

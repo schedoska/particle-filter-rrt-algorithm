@@ -1,3 +1,6 @@
 {
-    "C_Cpp.default.compilerPath": "${fileWorkspaceFolder}/include"
+    "C_Cpp.default.compilerPath": "${fileWorkspaceFolder}/include",
+    "files.associations": {
+        "vector": "cpp"
+    }
 }
