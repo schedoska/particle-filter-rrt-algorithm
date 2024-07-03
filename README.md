@@ -41,6 +41,10 @@ Simulation workflow can split into 4 stages:
 
 ![particle2](./docs/particle2.png)
 
+![particle3](./docs/particle3.png)
+
+![particle4](./docs/particle4.png)
+
 
 
 
